@@ -1,6 +1,6 @@
 function App() {
   return (
-    <h1 className="text-center">App component</h1>
+    <h1 className="text-center">App component (Deployment Test)</h1>
   )
 }
 
