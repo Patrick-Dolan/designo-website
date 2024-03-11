@@ -3,7 +3,6 @@ import { Link } from "react-router-dom"
 import HamburgerIcon from "../../assets/shared/mobile/HamburgerIcon"
 import CloseIcon from "../../assets/shared/mobile/CloseIcon"
 
-
 function Navbar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
 
