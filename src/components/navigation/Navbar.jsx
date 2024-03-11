@@ -31,7 +31,7 @@ function Navbar() {
           <li><Link to="/designo-website/contact" onClick={closeMobileNav}>Contact</Link></li>
         </ul>
       </nav>
-      <div className={`fixed inset-0 bg-black opacity-50 z-20 ${mobileNavOpen ? "" : "hidden"}`}></div>
+      <div onClick={closeMobileNav} className={`fixed inset-0 bg-black opacity-50 z-20 ${mobileNavOpen ? "" : "hidden"}`}></div>
       {/* Following div is designed to push elements down below fixed nav height */}
       <div className="min-h-24"></div>
     </>
