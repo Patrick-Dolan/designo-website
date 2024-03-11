@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 import HamburgerIcon from "../../assets/shared/mobile/HamburgerIcon"
 import CloseIcon from "../../assets/shared/mobile/CloseIcon"
 
@@ -20,9 +21,9 @@ function Navbar() {
           </button>
         </div>
         <ul className={`uppercase px-6 py-12 text-2xl leading-normal space-y-7 bg-black text-white ${mobileNavOpen ? "" : "hidden"}`}>
-          <li>Our company</li>
-          <li>Locations</li>
-          <li>Contact</li>
+          <li><Link to="/designo-website/about" onClick={toggleMobileNav}>Our company</Link></li>
+          <li><Link to="/designo-website/locations" onClick={toggleMobileNav}>Locations</Link></li>
+          <li><Link to="/designo-website/contact" onClick={toggleMobileNav}>Contact</Link></li>
         </ul>
       </nav>
       <div className={`fixed inset-0 bg-black opacity-50 z-20 ${mobileNavOpen ? "" : "hidden"}`}></div>

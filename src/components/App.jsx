@@ -1,10 +1,23 @@
+import { Routes, Route } from "react-router-dom"
 import Navbar from "./navigation/Navbar"
+import HomePage from "./pages/HomePage"
+import AboutPage from "./pages/AboutPage"
+import LocationsPage from "./pages/LocationsPage"
+import ContactPage from "./pages/ContactPage"
 
 function App() {
   return (
     <div>
       <Navbar />
-      <h1 className="text-center">Site in development.</h1>
+      <main className="px-6 ">
+        <Routes>
+          <Route path="/designo-website/" element={<HomePage />} />
+          <Route path="/designo-website/about" element={<AboutPage />} />
+          <Route path="/designo-website/locations" element={<LocationsPage />} />
+          <Route path="/designo-website/contact" element={<ContactPage />} />
+          <Route path="*" element={<div>404</div>} />
+        </Routes>
+      </main>
     </div>
   )
 }
