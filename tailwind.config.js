@@ -13,7 +13,11 @@ export default {
         white: "#FFFFFF",
         ["dark-gray"]: "#333136",
         ["light-gray"]: "#F1F3F5",
-      }
+      },
+      spacing: {
+        "24": "6rem",
+        ["nav-logo"]: "12.625rem",
+      },
     },
   },
   plugins: [],

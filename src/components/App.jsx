@@ -1,6 +1,11 @@
+import Navbar from "./navigation/Navbar"
+
 function App() {
   return (
-    <h1 className="text-center">App component (Deployment Test)</h1>
+    <div>
+      <Navbar />
+      <h1 className="text-center">Site in development.</h1>
+    </div>
   )
 }
 
