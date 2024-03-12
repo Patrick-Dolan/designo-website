@@ -1,22 +1,39 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 import HamburgerIcon from "../../assets/shared/mobile/HamburgerIcon"
 import CloseIcon from "../../assets/shared/mobile/CloseIcon"
 
 function Navbar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
+  const [show, setShow] = useState(true);
+  const [scrollPos, setScrollPos] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollPos(document.body.getBoundingClientRect().top);
+      setShow(document.body.getBoundingClientRect().top > scrollPos);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrollPos]);
+
 
   const openMobileNav = () => {
+    document.body.style.overflow = 'hidden';
     setMobileNavOpen(true);
   }
 
   const closeMobileNav = () => {
+    document.body.style.overflow = 'auto';
     setMobileNavOpen(false);
   }
 
   return (
     <>
-      <nav className="fixed w-full bg-white z-30">
+      <nav className={`fixed w-full bg-white z-30 ${show ? 'fixed' : 'hidden'}`}>
         <div className="flex justify-between items-center px-6 min-h-24">
           <Link to="/designo-website/" onClick={closeMobileNav}>
             <img src="/designo-website/shared/desktop/logo-dark.png" alt="Designo logo." className="w-nav-logo" />
