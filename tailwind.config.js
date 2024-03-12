@@ -17,7 +17,14 @@ export default {
       spacing: {
         "4.5": "1.125rem",
         "24": "6rem",
+        "30": "7.5rem",
         ["nav-logo"]: "12.625rem",
+      },
+      backgroundImage: {
+        "contact-card-pattern": "url('/designo-website/shared/desktop/bg-pattern-call-to-action.svg')",
+      },
+      backgroundPosition: {
+        "contact-card": "46% 52%",
       },
     },
   },
