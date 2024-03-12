@@ -11,7 +11,7 @@ function App() {
     <div className="flex flex-col justify-between h-screen">
       <div>
         <Navbar />
-        <main className="px-6">
+        <main>
           <Routes>
             <Route path="/designo-website/" element={<HomePage />} />
             <Route path="/designo-website/about" element={<AboutPage />} />
