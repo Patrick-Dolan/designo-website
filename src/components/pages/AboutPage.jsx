@@ -1,6 +1,10 @@
+import Container from "../shared/Container"
+
 function AboutPage() {
   return (
-    <div>AboutPage</div>
+    <Container>
+      AboutPage
+    </Container>
   )
 }
 

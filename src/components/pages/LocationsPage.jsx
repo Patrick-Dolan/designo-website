@@ -1,6 +1,10 @@
+import Container from "../shared/Container"
+
 function LocationsPage() {
   return (
-    <div>LocationsPage</div>
+    <Container>
+      LocationsPage
+    </Container>
   )
 }
 

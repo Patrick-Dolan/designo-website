@@ -1,6 +1,10 @@
+import Container from "../shared/Container"
+
 function ContactPage() {
   return (
-    <div>ContactPage</div>
+    <Container>
+      ContactPage
+    </Container>
   )
 }
 
