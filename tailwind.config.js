@@ -15,6 +15,7 @@ export default {
         ["light-gray"]: "#F1F3F5",
       },
       spacing: {
+        "4.5": "1.125rem",
         "24": "6rem",
         ["nav-logo"]: "12.625rem",
       },
