@@ -7,7 +7,7 @@ import ContactPage from "./pages/ContactPage"
 import Footer from "./shared/Footer"
 import WebDesignPage from "./pages/WebDesignPage"
 import GraphicDesignPage from "./pages/GraphicDesignPage"
-import AppDesignPage from "./pages/AddDesignPage"
+import AppDesignPage from "./pages/AppDesignPage"
 
 function App() {
   return (
