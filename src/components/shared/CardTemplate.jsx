@@ -1,9 +1,9 @@
 import Container from "./Container"
 import PropTypes from "prop-types"
 
-function CardTemplate({ children, className = ""}) {
+function CardTemplate({ children, className = "py-16"}) {
   return (
-    <div className={`py-16 bg-primary rounded-2xl ${className}`}>
+    <div className={`bg-primary rounded-2xl md:rounded-2xl ${className}`}>
       <Container>
         {children}
       </Container>

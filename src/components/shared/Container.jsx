@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 
-function Container({ children }) {
+function Container({ children, className = "px-6"}) {
   return (
-    <div className="px-6">
+    <div className={`${className}`}>
       {children}
     </div>
   )
@@ -10,6 +10,7 @@ function Container({ children }) {
 
 Container.propTypes = {
   children: PropTypes.node.isRequired,
+  className: PropTypes.string,
 }
 
 export default Container
