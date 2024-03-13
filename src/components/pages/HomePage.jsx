@@ -1,3 +1,4 @@
+import BrandIdentityStatements from "../home/BrandIdentityStatements"
 import HomeHeroSection from "../home/HomeHeroSection"
 import LinkCards from "../navigation/LinkCards"
 import Container from "../shared/Container"
@@ -11,7 +12,10 @@ function HomePage() {
         </Container>
       </div>
       <Container>
-        <LinkCards />
+        <div className="mb-30">
+          <LinkCards />
+        </div>
+        <BrandIdentityStatements />
       </Container>
     </>
   )

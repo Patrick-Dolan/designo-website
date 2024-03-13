@@ -30,6 +30,7 @@ export default {
         "sm-web-design": "url('/designo-website/assets/home/mobile/image-web-design.jpg')",
         "sm-graphic-design": "url('/designo-website/assets/home/mobile/image-graphic-design.jpg')",
         "sm-app-design": "url('/designo-website/assets/home/mobile/image-app-design.jpg')",
+        "home-circle-pattern": "url('/designo-website/shared/desktop/bg-pattern-small-circle.svg')",
       },
       backgroundPosition: {
         "contact-card": "46% 52%",
