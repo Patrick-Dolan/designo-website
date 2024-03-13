@@ -38,6 +38,12 @@ export default {
       letterSpacing: {
         "super-wide": "0.313rem",
       },
+      scale: {
+        "160": "1.60",
+      },
+      fontSize: {
+        "15": "0.938rem",
+      },
     },
   },
   plugins: [],
