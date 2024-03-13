@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import HamburgerIcon from "../../assets/shared/mobile/HamburgerIcon"
 import CloseIcon from "../../assets/shared/mobile/CloseIcon"
 
@@ -7,6 +7,7 @@ function Navbar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false)
   const [show, setShow] = useState(true);
   const [scrollPos, setScrollPos] = useState(0);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +20,10 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [scrollPos]);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location.pathname]);
 
 
   const openMobileNav = () => {
