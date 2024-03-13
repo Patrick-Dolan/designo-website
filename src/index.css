@@ -13,6 +13,7 @@ body {
   font-family: "Jost", sans-serif;
   font-size: 16px;
   line-height: 1.625rem;
+  color: #333136;
 }
 
 img {
@@ -26,4 +27,8 @@ h1 {
 
 h2 {
   font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
 }
