@@ -14,7 +14,7 @@ function HomeHeroSection() {
       <img 
         src="/designo-website/assets/home/desktop/image-hero-phone.png" 
         alt="Phone with a designo app on the screen" 
-        className="absolute bottom-[-22%] left-1/2 transform -translate-x-1/2 scale-160"
+        className="absolute bottom-[-23%] left-1/2 transform -translate-x-1/2 scale-160"
       />
     </CardTemplate>
   )
