@@ -16,12 +16,15 @@ export default {
       },
       spacing: {
         "4.5": "1.125rem",
+        "20": "5rem",
         "24": "6rem",
         "30": "7.5rem",
+        "211": "52.75rem",
         ["nav-logo"]: "12.625rem",
       },
       backgroundImage: {
         "contact-card-pattern": "url('/designo-website/shared/desktop/bg-pattern-call-to-action.svg')",
+        "home-hero-pattern": "url('/designo-website/assets/home/desktop/bg-pattern-hero-home.svg')",
       },
       backgroundPosition: {
         "contact-card": "46% 52%",
