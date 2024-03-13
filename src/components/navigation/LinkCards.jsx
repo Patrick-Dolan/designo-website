@@ -1,8 +1,10 @@
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
+import { useEffect, useState } from "react";
 import CardTemplate from "../shared/CardTemplate"
 
 function LinkCards() {
-  const links = [
+  const location = useLocation();
+  const [links, setLinks] = useState([
     {
       title: "Web Design",
       path: "/designo-website/web-design",
@@ -18,12 +20,20 @@ function LinkCards() {
       path: "/designo-website/graphic-design",
       background: "bg-sm-graphic-design",
     },
-  ]
+  ]);
+
+  useEffect(() => {
+    setLinks(prevLinks => prevLinks.filter(link => link.path !== location.pathname));
+  }, [location]);
+
+  const handleLinkClick = () => {
+    window.scrollTo(0, 0);
+  }
 
   return (
     <div className="flex flex-col gap-6">
       {links.map((link) => (
-        <Link key={link.title} to={link.path}>
+        <Link key={link.title} to={link.path} onClick={handleLinkClick}>
           <CardTemplate className={`relative h-62.5 flex justify-center items-center text-white ${link.background}`}>
             <div className="absolute inset-0 bg-pure-black opacity-50 z-10 rounded-2xl hover:bg-primary hover:opacity-80"></div>
             <div className="relative z-20">
