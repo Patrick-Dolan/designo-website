@@ -1,10 +1,10 @@
+import HomeHeroSection from "../home/HomeHeroSection"
 import Container from "../shared/Container"
 
 function HomePage() {
   return (
-    <Container>
-      <h1 className="text-center">Homepage component</h1>
-      <h2 className="text-center">Site in development...</h2>
+    <Container className="px-0 md:px-6">
+      <HomeHeroSection />
     </Container>
   )
 }
