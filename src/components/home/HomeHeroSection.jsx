@@ -1,14 +1,22 @@
+import { useNavigate } from "react-router-dom"
 import Button from "../shared/Button"
 import CardTemplate from "../shared/CardTemplate"
 
 function HomeHeroSection() {
+  const navigate = useNavigate();
+
+  const handleNavigate = () => {
+    navigate("/designo-website/about");
+    window.scrollTo(0, 0);
+  }
+
   return (
     <CardTemplate className="h-211 rounded-none text-white overflow-hidden relative bg-home-hero-pattern bg-no-repeat bg-left">
       <div className="flex flex-col gap-6 pt-20">
         <h1 className="text-center font-medium leading-9">Award-winning custom designs and digital branding solutions</h1>
         <p className="text-center leading-7 text-15">With over 10 years in the industry, we are experienced in creating fully responsive websites, app design, and engaging brand experiences. Find out more about our services.</p>
         <div className="flex justify-center z-10">
-          <Button text="Learn More" type="button" onClick={() => console.log("Clicked")} variant="secondary" />
+          <Button text="Learn More" type="button" onClick={handleNavigate} variant="secondary" />
         </div>
       </div>
       <img 
