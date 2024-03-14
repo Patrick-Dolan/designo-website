@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom"
 import PropTypes from "prop-types"
 import Container from "./Container"
-import FooterContactCard from "../cards/FooterContactCard"
+import FooterContactCard from "./FooterContactCard"
 
 function Footer({ contactCard = true }) {
   const handleLinkClick = () => {

@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom"
-import Button from "../shared/Button"
-import CardTemplate from "../shared/CardTemplate"
-import Container from "../shared/Container"
+import Button from "./Button"
+import CardTemplate from "./CardTemplate"
+import Container from "./Container"
 
 function FooterContactCard() {
   const navigate = useNavigate();
