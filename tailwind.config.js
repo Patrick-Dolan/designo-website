@@ -14,6 +14,7 @@ export default {
         white: "#FFFFFF",
         ["dark-gray"]: "#333136",
         ["light-gray"]: "#F1F3F5",
+        "light-gray-2": "#FDF3F0",
       },
       spacing: {
         "4.5": "1.125rem",
