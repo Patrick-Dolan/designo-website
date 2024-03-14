@@ -28,7 +28,7 @@ function GraphicDesignPage() {
         <DesignPageHero />
       </div>
       <Container>
-      <div className="mb-24">
+        <div className="mb-24">
           <ProjectList projects={projects} />
         </div>
         <LinkCards />
