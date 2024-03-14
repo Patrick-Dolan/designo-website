@@ -34,9 +34,11 @@ export default {
         "sm-app-design": "url('/designo-website/assets/home/mobile/image-app-design.jpg')",
         "home-circle-pattern": "url('/designo-website/shared/desktop/bg-pattern-small-circle.svg')",
         "design-page-hero-pattern": "url('/designo-website/shared/mobile/bg-pattern-design-pages-intro-mobile.svg')",
+        "sm-about-hero-pattern": "url('/designo-website/assets/about/mobile/bg-pattern-hero-about-mobile.svg')",
       },
       backgroundPosition: {
         "contact-card": "46% 52%",
+        "sm-about-hero-pos": "101% -73%",
       },
       letterSpacing: {
         "super-wide": "0.313rem",
