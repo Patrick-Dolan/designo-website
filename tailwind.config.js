@@ -47,9 +47,4 @@ export default {
     },
   },
   plugins: [],
-  purge: {
-    options: {
-      whitelist: ["sm-web-design", "sm-graphic-design", "sm-app-design"],
-    }
-  }
 }
