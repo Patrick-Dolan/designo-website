@@ -1,10 +1,14 @@
+import AboutHeroSection from "../about/AboutHeroSection"
 import Container from "../shared/Container"
 
 function AboutPage() {
   return (
-    <Container>
-      AboutPage
-    </Container>
+    <>
+      <AboutHeroSection />
+      <Container>
+        AboutPage
+      </Container>
+    </>
   )
 }
 
