@@ -19,6 +19,7 @@ export default {
         "4.5": "1.125rem",
         "20": "5rem",
         "24": "6rem",
+        "26": "6.5rem",
         "30": "7.5rem",
         "62.5": "15.625rem",
         "211": "52.75rem",
@@ -31,6 +32,7 @@ export default {
         "sm-graphic-design": "url('/designo-website/assets/home/mobile/image-graphic-design.jpg')",
         "sm-app-design": "url('/designo-website/assets/home/mobile/image-app-design.jpg')",
         "home-circle-pattern": "url('/designo-website/shared/desktop/bg-pattern-small-circle.svg')",
+        "design-page-hero-pattern": "url('/designo-website/shared/mobile/bg-pattern-design-pages-intro-mobile.svg')",
       },
       backgroundPosition: {
         "contact-card": "46% 52%",
