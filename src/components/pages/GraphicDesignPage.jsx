@@ -1,12 +1,17 @@
 import LinkCards from "../navigation/LinkCards"
 import Container from "../shared/Container"
+import DesignPageHero from "../shared/DesignPageHero"
 
 function GraphicDesignPage() {
   return (
-    <Container>
-      <h1 className="mb-4">Graphic Design Page</h1>
-      <LinkCards />
-    </Container>
+    <>
+      <div className="mb-30">
+        <DesignPageHero />
+      </div>
+      <Container>
+        <LinkCards />
+      </Container>
+    </>
   )
 }
 

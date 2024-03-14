@@ -1,12 +1,17 @@
 import LinkCards from "../navigation/LinkCards"
 import Container from "../shared/Container"
+import DesignPageHero from "../shared/DesignPageHero"
 
 function WebDesignPage() {
   return (
-    <Container>
-      <h1 className="mb-4">Web Design Page</h1>
-      <LinkCards />
-    </Container>
+      <>
+        <div className="mb-30">
+          <DesignPageHero />
+        </div>
+        <Container>
+          <LinkCards />
+        </Container>
+      </>
   )
 }
 
