@@ -1,5 +1,6 @@
 import AboutHeroSection from "../about/AboutHeroSection"
 import Container from "../shared/Container"
+import LocationLinks from "../shared/LocationLinks"
 
 function AboutPage() {
   return (
@@ -15,7 +16,9 @@ function AboutPage() {
           </Container>
         </div>
       </div>
-      {/* LOCATION LINKS GO HERE */}
+      <div className="my-30">
+        <LocationLinks />
+      </div>
       <div className="bg-light-gray rounded-none text-center overflow-hidden md:rounded-2xl">
         <img src="/designo-website/assets/about/mobile/image-real-deal.jpg" alt="" />
         <div className="py-20 bg-three-circles bg-no-repeat">
