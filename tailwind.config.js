@@ -18,6 +18,7 @@ export default {
       },
       spacing: {
         "4.5": "1.125rem",
+        "18": "4.5rem",
         "20": "5rem",
         "24": "6rem",
         "26": "6.5rem",
@@ -36,9 +37,11 @@ export default {
         "design-page-hero-pattern": "url('/designo-website/shared/mobile/bg-pattern-design-pages-intro-mobile.svg')",
         "sm-about-hero-pattern": "url('/designo-website/assets/about/mobile/bg-pattern-hero-about-mobile.svg')",
         "three-circles": "url('/designo-website/shared/desktop/bg-pattern-three-circles.svg')",
+        "sm-contact-hero-pattern": "url('/designo-website/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg')",
       },
       backgroundPosition: {
-        "contact-card": "46% 52%",
+        "footer-contact-card-pos": "46% 52%",
+        "contact-card-pos": "19% 0%",
         "sm-about-hero-pos": "101% -73%",
       },
       letterSpacing: {
