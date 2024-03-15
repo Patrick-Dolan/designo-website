@@ -28,11 +28,11 @@ function Footer({ contactCard = true }) {
               <li><Link to="/designo-website/locations" onClick={handleLinkClick}>Locations</Link></li>
               <li><Link to="/designo-website/contact" onClick={handleLinkClick}>Contact</Link></li>
             </ul>
-            <p className="mt-10 text-center opacity-50">
-              <span className="font-bold">Designo Central Office</span><br />
-              3886 Wellington Street<br />
-              Toronto, Ontario M9C 3J5
-            </p>
+            <address className="mt-10 text-center not-italic opacity-50">
+              <p className="font-bold">Designo Central Office</p>
+              <p>3886 Wellington Street</p>
+              <p>Toronto, Ontario M9C 3J5</p>
+            </address>
             <p className="mt-10 text-center opacity-50">
               <span className="font-bold">Contact Us (Central Office)</span><br />
               P : +1 253-863-8967<br />
