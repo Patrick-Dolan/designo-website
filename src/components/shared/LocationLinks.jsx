@@ -1,9 +1,15 @@
 import { useNavigate } from "react-router-dom";
 import Button from "./Button"
 
-// TODO make navigation buttons go to anchor tags on location page once its been created
 function LocationLinks() {
   const navigate = useNavigate();
+
+  // This function is used to navigate to the locations page and scroll to the location section.
+  // React router doesn't have a built-in way to scroll to a specific section on a page, so we have to use window.location.hash to scroll to the correct section in the page component.
+  const handleNavigationClick = (location, anchor) => {
+    navigate(location);
+    window.location.hash = anchor;
+  };
 
   return (
     <div className="flex flex-col items-center gap-12">
@@ -13,7 +19,7 @@ function LocationLinks() {
         </div>
         <h3 className="uppercase font-medium tracking-super-wide text-center mt-12 mb-8">Canada</h3>
         <div className="text-center">
-          <Button text="See Location" type="button" onClick={() => navigate("/designo-website/locations")} />
+          <Button text="See Location" type="button" onClick={() => handleNavigationClick("/designo-website/locations", "canada-location")} />
         </div>
       </div>
       <div>
@@ -22,7 +28,7 @@ function LocationLinks() {
         </div>
         <h3 className="uppercase font-medium tracking-super-wide text-center mt-12 mb-8">Australia</h3>
         <div className="text-center">
-          <Button text="See Location" type="button" onClick={() => navigate("/designo-website/locations")} />
+          <Button text="See Location" type="button" onClick={() => handleNavigationClick("/designo-website/locations", "australia-location")} />
         </div>
       </div>
       <div>
@@ -31,7 +37,7 @@ function LocationLinks() {
         </div>
         <h3 className="uppercase font-medium tracking-super-wide text-center mt-12 mb-8">United kingdom</h3>
         <div className="text-center">
-          <Button text="See Location" type="button" onClick={() => navigate("/designo-website/locations")} />
+          <Button text="See Location" type="button" onClick={() => handleNavigationClick("/designo-website/locations", "united-kingdom-location")} />
         </div>
       </div>
     </div>
