@@ -35,6 +35,7 @@ export default {
         "home-circle-pattern": "url('/designo-website/shared/desktop/bg-pattern-small-circle.svg')",
         "design-page-hero-pattern": "url('/designo-website/shared/mobile/bg-pattern-design-pages-intro-mobile.svg')",
         "sm-about-hero-pattern": "url('/designo-website/assets/about/mobile/bg-pattern-hero-about-mobile.svg')",
+        "three-circles": "url('/designo-website/shared/desktop/bg-pattern-three-circles.svg')",
       },
       backgroundPosition: {
         "contact-card": "46% 52%",
