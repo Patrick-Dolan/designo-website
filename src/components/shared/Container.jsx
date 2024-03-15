@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-function Container({ children, className = "px-6"}) {
+function Container({ children, className = "px-6" }) {
   return (
     <div className={`${className}`}>
       {children}
