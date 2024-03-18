@@ -46,6 +46,7 @@ export default {
       },
       letterSpacing: {
         "super-wide": "0.313rem",
+        "2px": "0.125rem",
       },
       scale: {
         "160": "1.60",
@@ -55,6 +56,9 @@ export default {
       },
       minWidth: {
         "37.5": "9.375rem",
+      },
+      minHeight: {
+        "tablet-nav": "9.688rem",
       },
       borderWidth: {
         "3": "3px",
