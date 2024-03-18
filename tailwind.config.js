@@ -53,6 +53,17 @@ export default {
       fontSize: {
         "15": "0.938rem",
       },
+      minWidth: {
+        "37.5": "9.375rem",
+      },
+      borderWidth: {
+        "3": "3px",
+      },
+    },
+  },
+  variants: {
+    extend: {
+      placeholder: ["responsive", "focus", "hover", "active"],
     },
   },
   plugins: [],
