@@ -18,12 +18,14 @@ export default {
       },
       spacing: {
         "4.5": "1.125rem",
+        "15": "3.75rem",
         "18": "4.5rem",
         "20": "5rem",
         "24": "6rem",
         "26": "6.5rem",
         "30": "7.5rem",
         "62.5": "15.625rem",
+        "151": "37.75rem",
         "211": "52.75rem",
         ["nav-logo"]: "12.625rem",
       },
@@ -43,6 +45,7 @@ export default {
         "footer-contact-card-pos": "46% 52%",
         "contact-card-pos": "19% 0%",
         "sm-about-hero-pos": "101% -73%",
+        "md-home-hero-pos": "400% 59%",
       },
       letterSpacing: {
         "super-wide": "0.313rem",
