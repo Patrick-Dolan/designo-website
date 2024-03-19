@@ -17,33 +17,38 @@ function Footer({ contactCard = true }) {
     <>
       {contactCard && <FooterContactCard  />}
       <footer className={`bg-black text-white ${!contactCard && "mt-30"}`}>
-        <Container>
-          <div className="flex flex-col justify-between items-center py-16">
-            <Link to="/designo-website/" onClick={handleLinkClick}>
-              <img src="/designo-website/shared/desktop/logo-light.png" alt="Designo logo." className="w-nav-logo" />
-            </Link>
-            <hr className="my-8 border border-white border-b-0 w-full opacity-10" />
-            <ul className={`uppercase text-sm text-center space-y-8 leading-6 tracking-widest`}>
-              <li><Link to="/designo-website/about" onClick={handleLinkClick}>Our company</Link></li>
-              <li><Link to="/designo-website/locations" onClick={handleLinkClick}>Locations</Link></li>
-              <li><Link to="/designo-website/contact" onClick={handleLinkClick}>Contact</Link></li>
-            </ul>
-            <address className="mt-10 text-center not-italic opacity-50">
-              <p className="font-bold">Designo Central Office</p>
-              <p>3886 Wellington Street</p>
-              <p>Toronto, Ontario M9C 3J5</p>
-            </address>
-            <p className="mt-10 text-center opacity-50">
-              <span className="font-bold">Contact Us (Central Office)</span><br />
-              P : +1 253-863-8967<br />
-              M : contact@designo.co
-            </p>
-            <div className="flex mt-10">
-              <img src="/designo-website/shared/desktop/icon-facebook.svg" alt="Facebook icon." className="w-6 h-6 mx-2" />
-              <img src="/designo-website/shared/desktop/icon-youtube.svg" alt="YouTube icon." className="w-6 h-6 mx-2" />
-              <img src="/designo-website/shared/desktop/icon-twitter.svg" alt="Twitter icon." className="w-6 h-6 mx-2" />
-              <img src="/designo-website/shared/desktop/icon-pinterest.svg" alt="Pinterest icon." className="w-6 h-6 mx-2" />
-              <img src="/designo-website/shared/desktop/icon-instagram.svg" alt="Instagram icon." className="w-6 h-6 mx-2" />
+        <Container className="px-6 md:px-10">
+          <div className="flex flex-col justify-between items-center py-16 md:py-20">
+            <div className="w-full md:flex md:justify-between md:items-center">
+              <Link to="/designo-website/" onClick={handleLinkClick}>
+                <img src="/designo-website/shared/desktop/logo-light.png" alt="Designo logo." className="w-nav-logo mx-auto" />
+              </Link>
+              <hr className="my-8 border border-white border-b-0 w-full opacity-10 md:hidden" />
+              <ul className={`uppercase text-sm text-center space-y-8 leading-6 tracking-widest md:flex md:items-center md:gap-10 md:space-y-0`}>
+                <li><Link to="/designo-website/about" onClick={handleLinkClick}>Our company</Link></li>
+                <li><Link to="/designo-website/locations" onClick={handleLinkClick}>Locations</Link></li>
+                <li><Link to="/designo-website/contact" onClick={handleLinkClick}>Contact</Link></li>
+              </ul>
+            </div>
+            <hr className="my-10 border border-white border-b-0 w-full opacity-10 hidden md:block" />
+            <div className="md:flex md:justify-between md:items-end md:w-full">
+              <address className="mt-10 text-center not-italic opacity-50 md:mt-0 md:text-left">
+                <p className="font-bold">Designo Central Office</p>
+                <p>3886 Wellington Street</p>
+                <p>Toronto, Ontario M9C 3J5</p>
+              </address>
+              <p className="mt-10 text-center opacity-50 md:mt-0 md:text-left md:font-medium">
+                <span className="font-bold">Contact Us (Central Office)</span><br />
+                P : +1 253-863-8967<br />
+                M : contact@designo.co
+              </p>
+              <div className="flex mt-10 md:mt-0">
+                <img src="/designo-website/shared/desktop/icon-facebook.svg" alt="Facebook icon." className="w-6 h-6 mx-2" />
+                <img src="/designo-website/shared/desktop/icon-youtube.svg" alt="YouTube icon." className="w-6 h-6 mx-2" />
+                <img src="/designo-website/shared/desktop/icon-twitter.svg" alt="Twitter icon." className="w-6 h-6 mx-2" />
+                <img src="/designo-website/shared/desktop/icon-pinterest.svg" alt="Pinterest icon." className="w-6 h-6 mx-2" />
+                <img src="/designo-website/shared/desktop/icon-instagram.svg" alt="Instagram icon." className="w-6 h-6 mx-2" />
+              </div>
             </div>
           </div>
         </Container>

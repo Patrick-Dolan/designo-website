@@ -26,6 +26,7 @@ export default {
         "30": "7.5rem",
         "50.5": "12.625rem",
         "62.5": "15.625rem",
+        "84": "21rem",
         "151": "37.75rem",
         "211": "52.75rem",
         ["nav-logo"]: "12.625rem",
@@ -47,6 +48,7 @@ export default {
       },
       backgroundPosition: {
         "footer-contact-card-pos": "46% 52%",
+        "md-footer-contact-card-pos": "35% 52%",
         "contact-card-pos": "19% 0%",
         "sm-about-hero-pos": "101% -73%",
         "md-home-hero-pos": "400% 59%",
