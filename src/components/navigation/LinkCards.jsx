@@ -22,18 +22,15 @@ function LinkCards() {
     },
   ]);
 
+  // usEffect removes the current page path from the links array
   useEffect(() => {
     setLinks(prevLinks => prevLinks.filter(link => link.path !== location.pathname));
   }, [location]);
 
-  const handleLinkClick = () => {
-    window.scrollTo(0, 0);
-  }
-
   return (
     <div className="flex flex-col gap-6">
       {links.map((link) => (
-        <Link key={link.title} to={link.path} onClick={handleLinkClick}>
+        <Link key={link.title} to={link.path}>
           <CardTemplate className={`relative h-62.5 flex justify-center items-center text-white ${link.background}`}>
             <div className="absolute inset-0 bg-pure-black opacity-50 z-10 rounded-2xl hover:bg-primary hover:opacity-80"></div>
             <div className="relative z-20">
