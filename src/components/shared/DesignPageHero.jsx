@@ -29,9 +29,9 @@ function DesignPageHero() {
   }, [pageInfo, location.pathname]);
 
   return (
-    <CardTemplate className="py-26 text-center text-white rounded-none bg-design-page-hero-pattern bg-no-repeat bg-right-top">
-      <h1 className="mb-6 font-medium">{selectedPageInfo.title}</h1>
-      <p className="text-15px">{selectedPageInfo.description}</p>
+    <CardTemplate className="py-26 text-center text-white rounded-none bg-design-page-hero-pattern bg-no-repeat bg-right-top md:bg-md-design-page-hero-pattern md:bg-left md:mx-10 md:py-16">
+      <h1 className="mb-6 font-medium md:text-5xl">{selectedPageInfo.title}</h1>
+      <p className="text-15px md:text-base md:max-w-96 md:mx-auto">{selectedPageInfo.description}</p>
     </CardTemplate>
   )
 }
