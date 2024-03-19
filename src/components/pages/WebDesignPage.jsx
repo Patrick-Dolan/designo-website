@@ -42,7 +42,7 @@ function WebDesignPage() {
       <div className="mb-24">
         <DesignPageHero />
       </div>
-      <Container>
+      <Container className="px-6 md:px-10">
         <div className="mb-24">
           <ProjectList projects={projects} />
         </div>
