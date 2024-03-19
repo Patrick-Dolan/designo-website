@@ -35,6 +35,9 @@ export default {
         "sm-web-design": "url('/designo-website/assets/home/mobile/image-web-design.jpg')",
         "sm-graphic-design": "url('/designo-website/assets/home/mobile/image-graphic-design.jpg')",
         "sm-app-design": "url('/designo-website/assets/home/mobile/image-app-design.jpg')",
+        "md-web-design": "url('/designo-website/assets/home/tablet/image-web-design.jpg')",
+        "md-graphic-design": "url('/designo-website/assets/home/tablet/image-graphic-design.jpg')",
+        "md-app-design": "url('/designo-website/assets/home/tablet/image-app-design.jpg')",
         "home-circle-pattern": "url('/designo-website/shared/desktop/bg-pattern-small-circle.svg')",
         "design-page-hero-pattern": "url('/designo-website/shared/mobile/bg-pattern-design-pages-intro-mobile.svg')",
         "sm-about-hero-pattern": "url('/designo-website/assets/about/mobile/bg-pattern-hero-about-mobile.svg')",
@@ -55,7 +58,8 @@ export default {
         "160": "1.60",
       },
       fontSize: {
-        "15": "0.938rem",
+        "10": "2.5rem",
+        "15px": "0.938rem",
       },
       minWidth: {
         "37.5": "9.375rem",

@@ -9,16 +9,19 @@ function LinkCards() {
       title: "Web Design",
       path: "/designo-website/web-design",
       background: "bg-sm-web-design",
+      mdBackground: "md:bg-md-web-design"
     },
     {
       title: "App Design",
       path: "/designo-website/app-design",
       background: "bg-sm-app-design",
+      mdBackground: "md:bg-md-app-design"
     },
     {
       title: "Graphic Design",
       path: "/designo-website/graphic-design",
       background: "bg-sm-graphic-design",
+      mdBackground: "md:bg-md-graphic-design"
     },
   ]);
 
@@ -31,10 +34,10 @@ function LinkCards() {
     <div className="flex flex-col gap-6">
       {links.map((link) => (
         <Link key={link.title} to={link.path}>
-          <CardTemplate className={`relative h-62.5 flex justify-center items-center text-white ${link.background}`}>
+          <CardTemplate className={`relative h-62.5 flex justify-center items-center text-white bg-cover bg-center ${link.background} ${link.mdBackground}`}>
             <div className="absolute inset-0 bg-pure-black opacity-50 z-10 rounded-2xl hover:bg-primary hover:opacity-80"></div>
             <div className="relative z-20">
-              <h2 className="font-medium uppercase mb-3">{link.title}</h2>
+              <h2 className="font-medium uppercase mb-3 md:mb-6 md:text-10 md:tracking-2px">{link.title}</h2>
               <div className="flex justify-center items-center gap-4">
                 <p className="font-medium uppercase text-center tracking-super-wide">View Projects</p>
                 <img src="/designo-website/shared/desktop/icon-right-arrow.svg" alt="" />
