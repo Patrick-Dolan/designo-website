@@ -11,7 +11,7 @@ import AppDesignPage from "./pages/AppDesignPage"
 
 function App() {
   return (
-    <div className="flex flex-col justify-between h-screen">
+    <div className="flex flex-col justify-between h-screen lg:bg-leaf-pattern lg:bg-no-repeat lg:bg-leaf-pattern-pos">
       <div>
         <Navbar />
         <main>
