@@ -34,7 +34,7 @@ function LocationCard({ location }) {
       <div className="bg-light-gray md:rounded-2xl">
         <div className="py-20 bg-three-circles bg-no-repeat md:py-22 md:text-left md:max-w-135 md:mx-auto md:bg-right-bottom">
           <Container>
-            <h2 className="font-medium mb-6 text-primary">{location.locationName}</h2>
+            <h2 className="font-medium mb-6 text-primary md:leading-12">{location.locationName}</h2>
             <div className="md:flex md:gap-8">
               <address className="my-6 text-center not-italic md:text-left md:mt-0 md:min-w-64">
                 <p className="font-bold">{location.officeName}</p>

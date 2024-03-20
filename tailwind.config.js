@@ -81,6 +81,9 @@ export default {
       borderWidth: {
         "3": "3px",
       },
+      lineHeight: {
+        "12": "3rem",
+      },
     },
   },
   variants: {
