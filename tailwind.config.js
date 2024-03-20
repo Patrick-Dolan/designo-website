@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      screens: {
+        "lg": "1440px",
+      },
       colors: {
         primary: "#E7816B",
         secondary: "#FFAD9B",
@@ -25,6 +28,7 @@ export default {
         "24": "6rem",
         "26": "6.5rem",
         "30": "7.5rem",
+        "41": "10.25rem",
         "50.5": "12.625rem",
         "62.5": "15.625rem",
         "64": "16rem",
@@ -53,6 +57,7 @@ export default {
         "three-circles": "url('/designo-website/shared/desktop/bg-pattern-three-circles.svg')",
         "sm-contact-hero-pattern": "url('/designo-website/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg')",
         "md-contact-hero-pattern": "url('/designo-website/assets/contact/desktop/bg-pattern-hero-desktop.svg')",
+        "leaf-pattern": "url('/designo-website/shared/desktop/bg-pattern-leaf.svg')",
       },
       backgroundPosition: {
         "footer-contact-card-pos": "46% 52%",
@@ -62,6 +67,7 @@ export default {
         "sm-about-hero-pos": "101% -73%",
         "md-home-hero-pos": "400% 59%",
         "md-about-hero-pos": "-250% 700%",
+        "leaf-pattern-pos": "0% 150%",
       },
       letterSpacing: {
         "super-wide": "0.313rem",
