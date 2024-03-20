@@ -6,7 +6,7 @@ function ContactPage() {
   return (
     <>
       <ContactCard />
-      <Container>
+      <Container className="px-6 md:px-10">
         <div className="mt-30">
           <LocationLinks />
         </div>

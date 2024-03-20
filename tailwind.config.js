@@ -52,11 +52,13 @@ export default {
         "md-about-hero-pattern": "url('/designo-website/assets/about/desktop/bg-pattern-hero-about-desktop.svg')",
         "three-circles": "url('/designo-website/shared/desktop/bg-pattern-three-circles.svg')",
         "sm-contact-hero-pattern": "url('/designo-website/assets/contact/mobile/bg-pattern-hero-contact-mobile.svg')",
+        "md-contact-hero-pattern": "url('/designo-website/assets/contact/desktop/bg-pattern-hero-desktop.svg')",
       },
       backgroundPosition: {
         "footer-contact-card-pos": "46% 52%",
         "md-footer-contact-card-pos": "35% 52%",
         "contact-card-pos": "19% 0%",
+        "md-contact-card-pos": "-245% -160%",
         "sm-about-hero-pos": "101% -73%",
         "md-home-hero-pos": "400% 59%",
         "md-about-hero-pos": "-250% 700%",

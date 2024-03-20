@@ -122,9 +122,9 @@ function ContactForm() {
           }
         </div>
       </div>
-        <div className="text-center mt-10">
-          <Button text="Submit" type="submit" variant="secondary" />
-        </div>
+      <div className="text-center mt-6 md:text-right">
+        <Button text="Submit" type="submit" variant="secondary" />
+      </div>
     </form>
   );
 }
