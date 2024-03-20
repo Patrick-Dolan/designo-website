@@ -7,11 +7,11 @@ function HomePage() {
   return (
     <>
       <div className="mb-30">
-        <Container className="px-0 md:px-10">
+        <Container className="mx-0 md:mx-10 lg:mx-41">
           <HomeHeroSection />
         </Container>
       </div>
-      <Container className="px-6 md:px-10">
+      <Container className="mx-6 md:mx-10 lg:mx-41">
         <div className="mb-30">
           <LinkCards />
         </div>
