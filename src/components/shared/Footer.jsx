@@ -17,7 +17,7 @@ function Footer({ contactCard = true }) {
     <>
       {contactCard && <FooterContactCard  />}
       <footer className={`bg-black text-white ${!contactCard && "mt-30"}`}>
-        <Container className="px-6 md:px-10">
+        <Container className="mx-6 md:mx-10 lg:mx-41">
           <div className="flex flex-col justify-between items-center py-16 md:py-20">
             <div className="w-full md:flex md:justify-between md:items-center">
               <Link to="/designo-website/" onClick={handleLinkClick}>
@@ -25,9 +25,9 @@ function Footer({ contactCard = true }) {
               </Link>
               <hr className="my-8 border border-white border-b-0 w-full opacity-10 md:hidden" />
               <ul className={`uppercase text-sm text-center space-y-8 leading-6 tracking-widest md:flex md:items-center md:gap-10 md:space-y-0`}>
-                <li><Link to="/designo-website/about" onClick={handleLinkClick}>Our company</Link></li>
-                <li><Link to="/designo-website/locations" onClick={handleLinkClick}>Locations</Link></li>
-                <li><Link to="/designo-website/contact" onClick={handleLinkClick}>Contact</Link></li>
+                <li className="hover:border-b hover:border-b-dark-gray"><Link to="/designo-website/about" onClick={handleLinkClick}>Our company</Link></li>
+                <li className="hover:border-b hover:border-b-dark-gray"><Link to="/designo-website/locations" onClick={handleLinkClick}>Locations</Link></li>
+                <li className="hover:border-b hover:border-b-dark-gray"><Link to="/designo-website/contact" onClick={handleLinkClick}>Contact</Link></li>
               </ul>
             </div>
             <hr className="my-10 border border-white border-b-0 w-full opacity-10 hidden md:block" />
@@ -37,7 +37,7 @@ function Footer({ contactCard = true }) {
                 <p>3886 Wellington Street</p>
                 <p>Toronto, Ontario M9C 3J5</p>
               </address>
-              <p className="mt-10 text-center opacity-50 md:mt-0 md:text-left md:font-medium">
+              <p className="mt-10 text-center opacity-50 md:mt-0 md:text-left md:font-medium lg:mr-40">
                 <span className="font-bold">Contact Us (Central Office)</span><br />
                 P : +1 253-863-8967<br />
                 M : contact@designo.co
