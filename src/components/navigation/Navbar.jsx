@@ -40,7 +40,7 @@ function Navbar() {
   return (
     <>
       <nav className={`fixed w-full bg-white z-30 ${show ? 'fixed' : 'hidden'}`}>
-        <div className="flex justify-between items-center px-6 min-h-24 md:px-10 md:py-16">
+        <div className="flex justify-between items-center mx-6 min-h-24 md:mx-10 md:py-16 lg:mx-41">
           <Link to="/designo-website/" onClick={closeMobileNav}>
             <img src="/designo-website/shared/desktop/logo-dark.png" alt="Designo logo." className="w-nav-logo" />
           </Link>
