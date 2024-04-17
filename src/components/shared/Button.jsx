@@ -5,7 +5,7 @@ function Button({ text, type, onClick, variant = "primary"}) {
 
   return (
     <button 
-      className={`uppercase p-4.5 rounded-lg font-medium tracking-wider min-w-37.5 hover:bg-secondary hover:text-white ${styles}`} 
+      className={`uppercase p-4.5 rounded-lg font-medium text-15px tracking-wider min-w-37.5 hover:bg-secondary hover:text-white ${styles}`} 
       type={type} 
       onClick={onClick}
     >
