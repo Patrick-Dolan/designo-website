@@ -26,13 +26,13 @@ function BrandIdentityStatements() {
   ]);
 
   return (
-    <div className="flex flex-col gap-20 md:gap-8">
+    <div className="flex flex-col gap-20 md:gap-8 lg:flex-row">
       {statements.map((statement) => (
-        <div key={statement.title} className="text-center md:text-left md:flex md:gap-12 md:items-center">
+        <div key={statement.title} className="text-center md:text-left md:flex md:gap-12 md:items-center lg:flex-col">
           <div className={`bg-home-circle-pattern bg-no-repeat bg-center mb-12 transform ${statement.backgroundImageRotation} md:min-h-50.5 md:min-w-50.5 md:mb-0`}>
             <img className={`mx-auto transform ${statement.imageCorrectionRotation}`} src={statement.imagePath} alt={`Illustration of a person ${statement.title}.`} />
           </div>
-          <div>
+          <div className="lg:text-center">
             <h3 className="uppercase font-medium tracking-super-wide mb-8 md:mb-4">{statement.title}</h3>
             <p>{statement.text}</p>
           </div>
