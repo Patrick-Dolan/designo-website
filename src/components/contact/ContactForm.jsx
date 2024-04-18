@@ -64,34 +64,33 @@ function ContactForm() {
   }
 
   return (
-    <form className="text-white" onSubmit={handleSubmit} noValidate>
+    <form className="text-white lg:w-full lg:max-w-95" onSubmit={handleSubmit} noValidate>
       <div className="flex flex-col space-y-6">
-        {/* TODO finish error handling integration */}
-        <div className="flex items-center">
+        <div className="relative flex items-center">
           <input 
             type="text" 
             id="name" 
             placeholder="Name"
             onChange={() => resetFormFieldErrorStatus("name")}
-            className="w-full bg-transparent border-b border-white placeholder-white placeholder:opacity-50 pl-3 pb-3 focus:outline-none focus:border-b-3 hover:border-b-3" 
+            className="w-full bg-transparent border-b border-white placeholder-white placeholder:opacity-50 pl-3 pb-3 focus:outline-none focus:border-b-3 hover:border-b-3 hover:cursor-pointer" 
           />
           {error.name && 
-            <div className="absolute flex items-center gap-2 right-8 pb-3">
+            <div className="absolute flex items-center gap-2 right-0 pb-3">
               <p className="text-xs">{error.nameErrorMessage}</p>
               <img src="/designo-website/assets/contact/desktop/icon-error.svg" alt="Error icon" />
             </div>
           }
         </div>
-        <div className="flex items-center">
+        <div className="relative flex items-center">
           <input 
             type="email" 
             id="email" 
             placeholder="Email Address"
             onChange={() => resetFormFieldErrorStatus("email")}
-            className="w-full bg-transparent border-b border-white placeholder-white placeholder:opacity-50 pl-3 pb-3 focus:outline-none focus:border-b-3 hover:border-b-3" 
+            className="w-full bg-transparent border-b border-white placeholder-white placeholder:opacity-50 pl-3 pb-3 focus:outline-none focus:border-b-3 hover:border-b-3 hover:cursor-pointer" 
           />
           {error.email && 
-            <div className="absolute flex items-center gap-2 right-8 pb-3">
+            <div className="absolute flex items-center gap-2 right-0 pb-3">
               <p className="text-xs">{error.emailErrorMessage}</p>
               <img src="/designo-website/assets/contact/desktop/icon-error.svg" alt="Error icon" />
             </div>
@@ -102,20 +101,20 @@ function ContactForm() {
             type="tel" 
             id="phone" 
             placeholder="Phone"
-            className="w-full bg-transparent border-b border-white placeholder-white placeholder:opacity-50 pl-3 pb-3 focus:outline-none focus:border-b-3 hover:border-b-3" 
+            className="w-full bg-transparent border-b border-white placeholder-white placeholder:opacity-50 pl-3 pb-3 focus:outline-none focus:border-b-3 hover:border-b-3 hover:cursor-pointer" 
           />
         </div>
-        <div className="flex">
+        <div className="relative flex">
           <textarea 
             id="message" 
             placeholder="Your Message" 
             rows="3"
             onChange={() => resetFormFieldErrorStatus("message")}
-            className="w-full bg-transparent border-b border-white placeholder-white placeholder:opacity-50 pl-3 pb-3 focus:outline-none focus:border-b-3 hover:border-b-3" 
+            className="w-full bg-transparent border-b border-white placeholder-white placeholder:opacity-50 pl-3 pb-3 focus:outline-none focus:border-b-3 hover:border-b-3 hover:cursor-pointer" 
           >
           </textarea>
           {error.message && 
-            <div className="absolute flex items-center gap-2 right-8 pb-3 pt-1">
+            <div className="absolute flex items-center gap-2 right-0 pb-3 pt-1">
               <p className="text-xs">{error.messageErrorMessage}</p>
               <img src="/designo-website/assets/contact/desktop/icon-error.svg" alt="Error icon" />
             </div>
