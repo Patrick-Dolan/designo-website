@@ -12,7 +12,7 @@ function LocationLinks() {
   };
 
   return (
-    <div className="flex flex-col items-center gap-12">
+    <div className="flex flex-col items-center gap-12 lg:flex-row lg:justify-around">
       <div>
         <div className={`bg-home-circle-pattern bg-no-repeat bg-center mb-12 transform rotate-90`}>
           <img className="transform -rotate-90" src="/designo-website/shared/desktop/illustration-canada.svg" alt="An illustration of Canada's skyline." />
