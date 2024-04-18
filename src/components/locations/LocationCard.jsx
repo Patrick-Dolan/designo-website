@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import Container from '../shared/Container'
 
-function LocationCard({ location }) {
+function LocationCard({ location, index }) {
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   useEffect(() => {
     const handleResize = () => {
@@ -27,11 +27,11 @@ function LocationCard({ location }) {
   }
 
   return (
-    <article className="rounded-none text-center overflow-hidden md:rounded-2xl md:flex md:flex-col md:gap-6" id={location.id}>
+    <article className={`rounded-none text-center overflow-hidden md:rounded-2xl md:flex md:flex-col md:gap-6 ${index % 2 == 0 ? "lg:flex-row-reverse" : "lg:flex-row"}`} id={location.id}>
       <div className="md:rounded-2xl md:overflow-hidden">
-        <img src={imageSrc} className="mx-auto w-full object-cover h-80" alt={location.altText} />
+        <img src={imageSrc} className="mx-auto w-full object-cover h-80 lg:h-full" alt={location.altText} />
       </div>
-      <div className="bg-light-gray md:rounded-2xl">
+      <div className="bg-light-gray md:rounded-2xl lg:flex-grow">
         <div className="py-20 bg-three-circles bg-no-repeat md:py-22 md:text-left md:max-w-135 md:mx-auto md:bg-right-bottom">
           <Container>
             <h2 className="font-medium mb-6 text-primary md:leading-12">{location.locationName}</h2>
@@ -65,7 +65,8 @@ LocationCard.propTypes = {
     cityStateZip: PropTypes.string.isRequired,
     phone: PropTypes.string.isRequired,
     email: PropTypes.string.isRequired
-  }).isRequired
+  }).isRequired,
+  index: PropTypes.number
 }
 
 export default LocationCard

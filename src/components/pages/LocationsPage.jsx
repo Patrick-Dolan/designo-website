@@ -1,4 +1,5 @@
 import { useEffect } from "react"
+import Container from "../shared/Container"
 import LocationCard from "../locations/LocationCard";
 
 function LocationsPage() {
@@ -56,9 +57,11 @@ function LocationsPage() {
   ];
 
   return (
-    <div className="flex flex-col gap-10 md:mx-10 md:gap-30">
-      {locations.map(location => <LocationCard key={location.id} location={location} />)}
-    </div>
+    <Container className="mx-0 lg:mx-41">
+      <div className="flex flex-col gap-10 md:mx-10 md:gap-30 lg:mx-0 lg:w-full">
+        {locations.map((location, index) => <LocationCard key={location.id} location={location} index={index} />)}
+      </div>
+    </Container>
   )
 }
 
