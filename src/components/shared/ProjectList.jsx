@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard"
 
 function ProjectList({ projects }) {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
       {projects.map((project) => (
         <ProjectCard key={project.title} project={project} />
       ))}

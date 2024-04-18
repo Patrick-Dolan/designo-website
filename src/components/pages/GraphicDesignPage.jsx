@@ -24,11 +24,11 @@ function GraphicDesignPage() {
 
   return (
     <>
-      <div className="mb-24">
+      <div className="mb-24 lg:mb-40">
         <DesignPageHero />
       </div>
-      <Container className="px-6 md:px-10">
-        <div className="mb-24">
+      <Container className="mx-6 md:mx-10 lg:mx-41">
+        <div className="mb-24 lg:mb-40">
           <ProjectList projects={projects} />
         </div>
         <LinkCards />
