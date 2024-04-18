@@ -37,9 +37,9 @@ function AboutPage() {
       <div className="mb-30 lg:mb-40">
         <AboutHeroSection />
       </div>
-      <div className="bg-light-gray rounded-none text-center overflow-hidden md:rounded-2xl">
-        <img src={talentImageSrc} className="mx-auto w-full object-cover h-80" alt="" />
-        <div className="py-20 bg-three-circles bg-no-repeat">
+      <div className="bg-light-gray rounded-none text-center overflow-hidden md:rounded-2xl lg:flex lg:bg-three-circles lg:bg-no-repeat lg:bg-bottom">
+        <img src={talentImageSrc} className="mx-auto w-full object-cover h-80 lg:h-auto lg:w-auto lg:mx-0" alt="" />
+        <div className="py-20 bg-three-circles bg-no-repeat lg:mx-auto lg:my-auto lg:text-left lg:max-w-122 lg:py-full lg:bg-none">
           <Container>
             <h2 className="font-medium mb-6 text-primary md:text-10 md:leading-10">World-class talent</h2>
             <p className="text-15px mb-10 md:text-base md:max-w-143 md:mx-auto">We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully crafted from concept to launch, ensuring success in its given market. We are constantly updating our skills in a myriad of platforms.</p>
@@ -50,9 +50,9 @@ function AboutPage() {
       <div className="my-30 lg:my-40">
         <LocationLinks />
       </div>
-      <div className="bg-light-gray rounded-none text-center overflow-hidden md:rounded-2xl">
-        <img src={realDealImageSrc} className="mx-auto w-full object-cover h-80" alt="" />
-        <div className="py-20 bg-three-circles bg-no-repeat">
+      <div className="bg-light-gray rounded-none text-center overflow-hidden md:rounded-2xl lg:flex lg:flex-row-reverse lg:bg-three-circles lg:bg-no-repeat lg:bg-left-bottom">
+        <img src={realDealImageSrc} className="mx-auto w-full object-cover h-80 lg:h-auto lg:w-auto lg:mx-0" alt="" />
+        <div className="py-20 bg-three-circles bg-no-repeat lg:mx-auto lg:my-auto lg:text-left lg:max-w-122 lg:bg-none">
           <Container>
             <h2 className="font-medium mb-6 text-primary md:text-10 md:leading-10">The real deal</h2>
             <p className="text-15px mb-6 md:text-base md:max-w-143 md:mx-auto">As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own. Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every opportunity. We make design and technology more accessible and give you tools to measure success.</p>
