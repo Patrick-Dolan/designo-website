@@ -33,8 +33,8 @@ function AboutPage() {
   }
 
   return (
-    <div className="md:mx-10">
-      <div className="mb-30">
+    <div className="md:mx-10 lg:mx-41">
+      <div className="mb-30 lg:mb-40">
         <AboutHeroSection />
       </div>
       <div className="bg-light-gray rounded-none text-center overflow-hidden md:rounded-2xl">
@@ -47,7 +47,7 @@ function AboutPage() {
           </Container>
         </div>
       </div>
-      <div className="my-30">
+      <div className="my-30 lg:my-40">
         <LocationLinks />
       </div>
       <div className="bg-light-gray rounded-none text-center overflow-hidden md:rounded-2xl">
