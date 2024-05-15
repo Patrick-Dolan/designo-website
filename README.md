@@ -46,7 +46,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/solutions/designo-website-built-with-react-and-tailwind-bJNQ1frI6t)
-- Live Site URL: [GitHub Pages Live Site](https://patrick-dolan.github.io/designo-website/contact)
+- Live Site URL: [GitHub Pages Live Site](https://patrick-dolan.github.io/designo-website/)
 
 ## My process
 
